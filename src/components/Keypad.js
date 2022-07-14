@@ -4,26 +4,20 @@ import back from "./back.webp";
 import Key from "./Key";
 
 const Keypad = () => {
+  const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "*", "0", "#"];
+
   return (
     <div className="main__container">
       <div className="phone__container">
+        {/* move field to seperate component */}
         <div className="phone__field">
           <div className="phone__number"></div>
           <img className="phone__back" src={back} />
         </div>
         <div className="phone__keypad">
-          <Key number={"1"} />
-          <Key number={"2"} />
-          <Key number={"3"} />
-          <Key number={"4"} />
-          <Key number={"5"} />
-          <Key number={"6"} />
-          <Key number={"7"} />
-          <Key number={"8"} />
-          <Key number={"9"} />
-          <Key number={"*"} />
-          <Key number={"0"} />
-          <Key number={"#"} />
+          {numbers.map((i, index) => (
+            <Key number={i} key={index} />
+          ))}
         </div>
       </div>
     </div>
