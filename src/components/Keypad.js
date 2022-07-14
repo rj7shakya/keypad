@@ -10,7 +10,10 @@ const Keypad = () => {
   return (
     <div className="main__container">
       <div className="phone__container">
-        <Field allkeys={allkeys} />
+        <Field
+          allkeys={allkeys}
+          onRemove={() => setallkeys(allkeys.substring(0, allkeys.length - 1))}
+        />
         <div className="phone__keypad">
           {numbers.map((i, index) => (
             <Key
