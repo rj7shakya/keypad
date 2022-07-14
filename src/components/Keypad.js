@@ -1,6 +1,6 @@
 import React from "react";
+import Field from "./Field";
 
-import back from "./back.webp";
 import Key from "./Key";
 
 const Keypad = () => {
@@ -9,11 +9,7 @@ const Keypad = () => {
   return (
     <div className="main__container">
       <div className="phone__container">
-        {/* move field to seperate component */}
-        <div className="phone__field">
-          <div className="phone__number"></div>
-          <img className="phone__back" src={back} />
-        </div>
+        <Field />
         <div className="phone__keypad">
           {numbers.map((i, index) => (
             <Key number={i} key={index} />
