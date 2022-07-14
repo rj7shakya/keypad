@@ -1,6 +1,7 @@
 import React from "react";
 
 import back from "./back.webp";
+import Key from "./Key";
 
 const Keypad = () => {
   return (
@@ -11,18 +12,18 @@ const Keypad = () => {
           <img className="phone__back" src={back} />
         </div>
         <div className="phone__keypad">
-          <div className="phone__key one">1</div>
-          <div className="phone__key two">2</div>
-          <div className="phone__key three">3</div>
-          <div className="phone__key four">4</div>
-          <div className="phone__key five">5</div>
-          <div className="phone__key six">6</div>
-          <div className="phone__key seven">7</div>
-          <div className="phone__key eight">8</div>
-          <div className="phone__key nine">9</div>
-          <div className="phone__key asterisk">*</div>
-          <div className="phone__key zero">0</div>
-          <div className="phone__key hash">#</div>
+          <Key number={"1"} />
+          <Key number={"2"} />
+          <Key number={"3"} />
+          <Key number={"4"} />
+          <Key number={"5"} />
+          <Key number={"6"} />
+          <Key number={"7"} />
+          <Key number={"8"} />
+          <Key number={"9"} />
+          <Key number={"*"} />
+          <Key number={"0"} />
+          <Key number={"#"} />
         </div>
       </div>
     </div>

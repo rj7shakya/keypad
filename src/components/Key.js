@@ -1,7 +1,7 @@
 import React from "react";
 
-const Key = () => {
-  return <div className="phone__key one">1</div>;
+const Key = ({ number }) => {
+  return <div className="phone__key one">{number}</div>;
 };
 
 export default Key;
