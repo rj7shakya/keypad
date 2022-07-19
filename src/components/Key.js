@@ -1,11 +1,7 @@
 import React from "react";
 
-const Key = ({ number, onAdd }) => {
-  return (
-    <div className="phone__key one" onClick={() => onAdd(number)}>
-      {number}
-    </div>
-  );
+const Key = ({ number }) => {
+  return <div className="phone__key one">{number}</div>;
 };
 
 export default Key;
